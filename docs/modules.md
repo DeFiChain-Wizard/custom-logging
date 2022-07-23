@@ -6,21 +6,25 @@
 
 ### Functions
 
+- [logDebug](modules.md#logdebug)
+- [logError](modules.md#logerror)
 - [logInfo](modules.md#loginfo)
+- [logTable](modules.md#logtable)
+- [logWarn](modules.md#logwarn)
 
 ## Functions
 
-### logInfo
+### logDebug
 
-▸ **logInfo**(...`message`): `void`
+▸ **logDebug**(...`message`): `void`
 
-Log info message
+Logs out an DEBUG log.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `...message` | `any` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...message` | (`string` \| `number` \| `object`)[] | Either one or more parameters to log out |
 
 #### Returns
 
@@ -28,4 +32,92 @@ Log info message
 
 #### Defined in
 
-index.ts:16
+[index.ts:61](https://github.com/DeFiChain-Wizard/custom-logging/blob/a8179e9/src/index.ts#L61)
+
+___
+
+### logError
+
+▸ **logError**(...`message`): `void`
+
+Logs out an DEBUG log.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...message` | (`string` \| `number` \| `object`)[] | Either one or more parameters to log out |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[index.ts:93](https://github.com/DeFiChain-Wizard/custom-logging/blob/a8179e9/src/index.ts#L93)
+
+___
+
+### logInfo
+
+▸ **logInfo**(...`message`): `void`
+
+Logs out an INFO log.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...message` | (`string` \| `number` \| `object`)[] | Either one or more parameters to log out |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[index.ts:45](https://github.com/DeFiChain-Wizard/custom-logging/blob/a8179e9/src/index.ts#L45)
+
+___
+
+### logTable
+
+▸ **logTable**(...`message`): `void`
+
+Prints out any array or object as table.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...message` | (`string` \| `number` \| `object`)[] | Either one or more parameters to log out |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[index.ts:109](https://github.com/DeFiChain-Wizard/custom-logging/blob/a8179e9/src/index.ts#L109)
+
+___
+
+### logWarn
+
+▸ **logWarn**(...`message`): `void`
+
+Logs out an DEBUG log.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `...message` | (`string` \| `number` \| `object`)[] | Either one or more parameters to log out |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[index.ts:77](https://github.com/DeFiChain-Wizard/custom-logging/blob/a8179e9/src/index.ts#L77)
