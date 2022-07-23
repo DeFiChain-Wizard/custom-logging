@@ -17,6 +17,6 @@ logInfo(1, 2, 3, 4);
 ```
 This will result in this output:
 
-![console.log](http://url/to/img.png)
+![console.log](https://github.com/DeFiChain-Wizard/custom-logging/blob/main/img/console.png)
 
 
