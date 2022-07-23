@@ -7,17 +7,29 @@
  */
 
 import chalk from "chalk";
+
 const log = console.log;
 const table = console.table;
-
-const prepareDate = (date: number): string =>
-  date < 10 ? `0${date}` : `${date}`;
 
 const INFO = `${chalk.green("INFO")}:`;
 const DEBUG = `${chalk.cyan("DEBUG")}:`;
 const WARNING = `${chalk.yellow("WARNING")}:`;
 const ERROR = `${chalk.red("ERROR")}:`;
 
+/**
+ * Generates two-digit numbers for the logging date/time.
+ *
+ * @param date The date property to format
+ * @returns 01 instead of 1, if the number of digits is 1
+ */
+const prepareDate = (date: number): string =>
+  date < 10 ? `0${date}` : `${date}`;
+
+/**
+ * Returns the current date/time as String for the logging.
+ *
+ * @returns the date as String
+ */
 const getDate = () => {
   const date = new Date();
   return `${date.getFullYear()}/${prepareDate(
@@ -70,7 +82,7 @@ const logDebug = (...message: Array<object | number | string>) => {
 };
 
 /**
- * Logs out an DEBUG log.
+ * Logs out an WARNING log.
  *
  * @param message Either one or more parameters to log out
  */
@@ -86,7 +98,7 @@ const logWarn = (...message: Array<object | number | string>) => {
 };
 
 /**
- * Logs out an DEBUG log.
+ * Logs out an ERROR log.
  *
  * @param message Either one or more parameters to log out
  */
