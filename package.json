@@ -1,0 +1,40 @@
+{
+    "name": "@defichainwizard/custom-logging",
+    "version": "0.0.1",
+    "description": "The npm custom logging library for the DeFIChain Wizard",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+        "build": "tsc && npm run docs",
+        "docs": "npx typedoc --plugin typedoc-plugin-markdown src/index.ts",
+        "publish": "npm run build && npm publish --access public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DeFiChain-Wizard/custom-logging.git"
+    },
+    "keywords": [
+        "defichain",
+        "defichainwizard",
+        "logging"
+    ],
+    "author": "DeFiChain Wizard",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DeFiChain-Wizard/custom-logging/issues"
+    },
+    "homepage": "https://github.com/DeFiChain-Wizard/custom-logging#readme",
+    "dependencies": {
+        "chalk": "^4.1.2"
+    },
+    "devDependencies": {
+        "@types/node": "^18.0.6",
+        "@typescript-eslint/eslint-plugin": "^5.30.7",
+        "@typescript-eslint/eslint-plugin-tslint": "^5.30.7",
+        "eslint": "^8.20.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-prettier": "^4.2.1",
+        "typedoc": "^0.23.8",
+        "typedoc-plugin-markdown": "^3.13.4"
+    }
+}
