@@ -25,6 +25,8 @@
     },
     "homepage": "https://github.com/DeFiChain-Wizard/custom-logging#readme",
     "dependencies": {
+        "@defichain/jellyfish-api-core": "^2.54.1",
+        "@defichain/whale-api-client": "^2.54.1",
         "@typescript-eslint/parser": "^5.30.7",
         "chalk": "^4.1.2"
     },
