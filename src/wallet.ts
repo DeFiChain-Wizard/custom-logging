@@ -8,6 +8,7 @@ interface WalletInfo {
   Address: string;
   UTXO: number;
   Blockheight: number;
+  TokenBalance?: AddressToken[];
 }
 
 /**
@@ -15,14 +16,15 @@ interface WalletInfo {
  *
  * @param message Either one or more parameters to log out
  */
-const logWalletInfo = (
-  walletInfo: WalletInfo,
-  tokenBalance: AddressToken[]
-) => {
+const logWalletInfo = (walletInfo: WalletInfo) => {
+  const tokenBalance = walletInfo.TokenBalance;
+  delete walletInfo.TokenBalance;
   log(getDate(), INFO, "WALLET INFORMATION:");
   table({ walletInfo });
-  log(getDate(), INFO, "TOKEN INFORMATION:");
-  table(tokenBalance);
+  if (tokenBalance) {
+    log(getDate(), INFO, "TOKEN INFORMATION:");
+    table(tokenBalance);
+  }
 };
 
 export { logWalletInfo, WalletInfo };
