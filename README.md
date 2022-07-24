@@ -85,7 +85,9 @@ This will result in this output:
 
 ## Send messages to Telegram
 
-Since having to setup telegram is mandatory, it is highly recommended to send errors to the enduser
+> **_Important:_** When logging an error, a message to the end user will **ALWAYS** be sent!
+
+But you can of course send a message manually, if you want to inform about certain things.
 
 ```ts
 
