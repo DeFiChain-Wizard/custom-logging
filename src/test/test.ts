@@ -1,5 +1,4 @@
 import { BigNumber } from "@defichain/jellyfish-api-core";
-import { AddressToken } from "@defichain/whale-api-client/dist/api/address";
 import { logDebug, logError, logInfo, logTable, logWarn } from "..";
 import { logWalletInfo, WalletInfo } from "../wallet";
 
@@ -24,31 +23,30 @@ const walletInfo: WalletInfo = {
   Address: "8defichainBurnAddressXXXXXXXdRQkSm",
   UTXO: new BigNumber(12312.14).toNumber(),
   Blockheight: 21312,
+  TokenBalance: [
+    {
+      id: "0",
+      amount: "190420.61840602",
+      symbol: "DFI",
+      symbolKey: "DFI",
+      name: "Default Defi token",
+      isDAT: true,
+      isLPS: false,
+      isLoanToken: false,
+      displaySymbol: "DFI",
+    },
+    {
+      id: "2",
+      amount: "420.61840602",
+      symbol: "BTC",
+      symbolKey: "BTC",
+      name: "Bitcoin",
+      isDAT: true,
+      isLPS: false,
+      isLoanToken: false,
+      displaySymbol: "dBTC",
+    },
+  ],
 };
 
-const tokens: Array<AddressToken> = [
-  {
-    id: "0",
-    amount: "190420.61840602",
-    symbol: "DFI",
-    symbolKey: "DFI",
-    name: "Default Defi token",
-    isDAT: true,
-    isLPS: false,
-    isLoanToken: false,
-    displaySymbol: "DFI",
-  },
-  {
-    id: "2",
-    amount: "420.61840602",
-    symbol: "BTC",
-    symbolKey: "BTC",
-    name: "Bitcoin",
-    isDAT: true,
-    isLPS: false,
-    isLoanToken: false,
-    displaySymbol: "dBTC",
-  },
-];
-
-logWalletInfo(walletInfo, tokens);
+logWalletInfo(walletInfo);
