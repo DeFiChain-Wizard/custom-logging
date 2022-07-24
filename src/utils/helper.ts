@@ -47,6 +47,16 @@ const getDate = () => {
   )}:${prepareDate(date.getSeconds())}`;
 };
 
+/**
+ * Checks if a certain String is null or empty
+ *
+ * @param value the text to be checked
+ * @returns true or false
+ */
+const isStringNullOrEmpty = (value: string): boolean => {
+  return value === undefined || value.length === 0;
+};
+
 export {
   INFO,
   DEBUG,
@@ -57,4 +67,5 @@ export {
   log,
   table,
   isDevelopmentEnvironment,
+  isStringNullOrEmpty,
 };

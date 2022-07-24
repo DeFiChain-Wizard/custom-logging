@@ -7,6 +7,7 @@
  */
 
 import { table } from "console";
+import { Telegram } from "./messenger/telegram";
 import {
   DEBUG,
   ERROR,
@@ -96,4 +97,20 @@ const logTable = (...message: Array<object | number | string>) => {
   table(messageToLog);
 };
 
-export { logInfo, logDebug, logError, logWarn, logTable };
+/**
+ * Logging to the Telegram chat.
+ * @param message The message to send to the telegram service.
+ */
+const logTelegram = async (telegram: Telegram, message: string) => {
+  try {
+    await telegram.send(message);
+  } catch (error) {
+    if (typeof error === "string") {
+      logError(error);
+    } else if (error instanceof Error) {
+      logError(error.message);
+    }
+  }
+};
+
+export { logInfo, logDebug, logError, logWarn, logTable, logTelegram };
