@@ -10,6 +10,11 @@ const log = console.log;
 const table = console.table;
 
 /**
+ * Checks the current environment variable, if available
+ */
+const isDevelopmentEnvironment = () => process?.env?.NODE_ENV !== "production";
+
+/**
  * Prepares the output for the console logger
  */
 const prepareOutput = (array: Array<object | number | string>) => {
@@ -42,4 +47,14 @@ const getDate = () => {
   )}:${prepareDate(date.getSeconds())}`;
 };
 
-export { INFO, DEBUG, ERROR, WARNING, getDate, prepareOutput, log, table };
+export {
+  INFO,
+  DEBUG,
+  ERROR,
+  WARNING,
+  getDate,
+  prepareOutput,
+  log,
+  table,
+  isDevelopmentEnvironment,
+};

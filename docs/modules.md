@@ -32,7 +32,7 @@ Logs out an DEBUG log.
 
 #### Defined in
 
-[index.ts:73](https://github.com/DeFiChain-Wizard/custom-logging/blob/dc7a8c2/src/index.ts#L73)
+[index.ts:41](https://github.com/DeFiChain-Wizard/custom-logging/blob/bc5abff/src/index.ts#L41)
 
 ___
 
@@ -54,7 +54,7 @@ Logs out an ERROR log.
 
 #### Defined in
 
-[index.ts:105](https://github.com/DeFiChain-Wizard/custom-logging/blob/dc7a8c2/src/index.ts#L105)
+[index.ts:73](https://github.com/DeFiChain-Wizard/custom-logging/blob/bc5abff/src/index.ts#L73)
 
 ___
 
@@ -76,7 +76,7 @@ Logs out an INFO log.
 
 #### Defined in
 
-[index.ts:57](https://github.com/DeFiChain-Wizard/custom-logging/blob/dc7a8c2/src/index.ts#L57)
+[index.ts:25](https://github.com/DeFiChain-Wizard/custom-logging/blob/bc5abff/src/index.ts#L25)
 
 ___
 
@@ -98,7 +98,7 @@ Prints out any array or object as table.
 
 #### Defined in
 
-[index.ts:121](https://github.com/DeFiChain-Wizard/custom-logging/blob/dc7a8c2/src/index.ts#L121)
+[index.ts:89](https://github.com/DeFiChain-Wizard/custom-logging/blob/bc5abff/src/index.ts#L89)
 
 ___
 
@@ -120,4 +120,4 @@ Logs out an WARNING log.
 
 #### Defined in
 
-[index.ts:89](https://github.com/DeFiChain-Wizard/custom-logging/blob/dc7a8c2/src/index.ts#L89)
+[index.ts:57](https://github.com/DeFiChain-Wizard/custom-logging/blob/bc5abff/src/index.ts#L57)

@@ -12,6 +12,7 @@ import {
   ERROR,
   getDate,
   INFO,
+  isDevelopmentEnvironment,
   log,
   prepareOutput,
   WARNING,
@@ -39,13 +40,16 @@ const logInfo = (...message: Array<object | number | string>) => {
  * @param message Either one or more parameters to log out
  */
 const logDebug = (...message: Array<object | number | string>) => {
-  const messageToLog = prepareOutput(message);
-  if (typeof message === "object") {
-    // Combine styled and normal strings
-    log(getDate(), DEBUG, messageToLog);
-  } else {
-    // Combine styled and normal strings
-    log(getDate(), `${DEBUG} ${messageToLog}`);
+  // only log out debug if dev environment is set
+  if (isDevelopmentEnvironment()) {
+    const messageToLog = prepareOutput(message);
+    if (typeof message === "object") {
+      // Combine styled and normal strings
+      log(getDate(), DEBUG, messageToLog);
+    } else {
+      // Combine styled and normal strings
+      log(getDate(), `${DEBUG} ${messageToLog}`);
+    }
   }
 };
 

@@ -4,7 +4,7 @@
 
 The custom logging library for the DeFiChain Wizard
 
-## Usage
+## Basic Usage
 
 ```ts
 import { logDebug, logError, logInfo, logWarn } from "@defichainwizard/custom-logging";
@@ -19,9 +19,9 @@ logInfo(1, 2, 3, 4);
 ```
 This will result in this output:
 
-![console.log](https://github.com/DeFiChain-Wizard/custom-logging/blob/main/img/console.png)
+![console info](img/console.png?raw=true "Console Logging output")
 
-## printing tables
+## Printing tables
 
 You can also print out `Objects` and `Arrays`as table:
 
@@ -38,4 +38,46 @@ logTable([
 
 This will result in this output:
 
-![console.log](https://github.com/DeFiChain-Wizard/custom-logging/blob/main/img/table.png)
+![Table logging](img/table.png?raw=true "Table logging output")
+
+## Printing some information about the current wallet
+
+If you want to print out some information about a certain wallet, you can do this:
+
+```ts
+const walletInfo: WalletInfo = {
+  Address: "8defichainBurnAddressXXXXXXXdRQkSm",
+  UTXO: new BigNumber(12312.14).toNumber(),
+  Blockheight: 21312,
+};
+
+const tokens: Array<AddressToken>  {
+    id: "0",
+    amount: "190420.61840602",
+    symbol: "DFI",
+    symbolKey: "DFI",
+    name: "Default Defi token",
+    isDAT: true,
+    isLPS: false,
+    isLoanToken: false,
+    displaySymbol: "DFI",
+  },
+  {
+    id: "2",
+    amount: "420.61840602",
+    symbol: "BTC",
+    symbolKey: "BTC",
+    name: "Bitcoin",
+    isDAT: true,
+    isLPS: false,
+    isLoanToken: false,
+    displaySymbol: "dBTC",
+  },
+];
+
+logWalletInfo(walletInfo, tokens);
+```
+
+This will result in this output:
+
+![wallet info](img/wallet.png?raw=true "Wallet Info output")
