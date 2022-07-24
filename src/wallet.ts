@@ -8,7 +8,7 @@ interface WalletInfo {
   Address: string;
   UTXO: number;
   Blockheight: number;
-  TokenBalance?: AddressToken[];
+  TokenBalance?: AddressToken | Map<string, AddressToken> | undefined;
 }
 
 /**
@@ -23,7 +23,11 @@ const logWalletInfo = (walletInfo: WalletInfo) => {
   table({ walletInfo });
   if (tokenBalance) {
     log(getDate(), INFO, "TOKEN INFORMATION:");
-    table(tokenBalance);
+    if (tokenBalance instanceof Map) {
+      table(Array.from(tokenBalance.values()));
+    } else {
+      table(tokenBalance);
+    }
   }
 };
 
