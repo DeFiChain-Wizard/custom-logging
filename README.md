@@ -85,9 +85,9 @@ This will result in this output:
 
 ## Send messages to Telegram
 
-> **_Important:_** When logging an error, a message to the end user will **ALWAYS** be sent!
+> **_Important:_** Please consider also sending an error message via Telegram to users.
 
-But you can of course send a message manually, if you want to inform about certain things.
+But you can of course send a message any time, if you want to inform about certain things.
 
 ```ts
 

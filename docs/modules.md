@@ -4,12 +4,23 @@
 
 ## Table of contents
 
+### Classes
+
+- [Telegram](classes/Telegram.md)
+
+### Interfaces
+
+- [TelegramBotConfig](interfaces/TelegramBotConfig.md)
+
 ### Functions
 
 - [logDebug](modules.md#logdebug)
 - [logError](modules.md#logerror)
 - [logInfo](modules.md#loginfo)
 - [logTable](modules.md#logtable)
+- [logTelegram](modules.md#logtelegram)
+- [logTitle](modules.md#logtitle)
+- [logWalletInfo](modules.md#logwalletinfo)
 - [logWarn](modules.md#logwarn)
 
 ## Functions
@@ -32,7 +43,7 @@ Logs out an DEBUG log.
 
 #### Defined in
 
-[index.ts:42](https://github.com/DeFiChain-Wizard/custom-logging/blob/02920d6/src/index.ts#L42)
+[index.ts:47](https://github.com/DeFiChain-Wizard/custom-logging/blob/0daea93/src/index.ts#L47)
 
 ___
 
@@ -54,7 +65,7 @@ Logs out an ERROR log.
 
 #### Defined in
 
-[index.ts:77](https://github.com/DeFiChain-Wizard/custom-logging/blob/02920d6/src/index.ts#L77)
+[index.ts:82](https://github.com/DeFiChain-Wizard/custom-logging/blob/0daea93/src/index.ts#L82)
 
 ___
 
@@ -76,7 +87,7 @@ Logs out an INFO log.
 
 #### Defined in
 
-[index.ts:26](https://github.com/DeFiChain-Wizard/custom-logging/blob/02920d6/src/index.ts#L26)
+[index.ts:31](https://github.com/DeFiChain-Wizard/custom-logging/blob/0daea93/src/index.ts#L31)
 
 ___
 
@@ -98,7 +109,69 @@ Prints out any array or object as table.
 
 #### Defined in
 
-[index.ts:93](https://github.com/DeFiChain-Wizard/custom-logging/blob/02920d6/src/index.ts#L93)
+[index.ts:98](https://github.com/DeFiChain-Wizard/custom-logging/blob/0daea93/src/index.ts#L98)
+
+___
+
+### logTelegram
+
+▸ **logTelegram**(`telegram`, `message`): `Promise`<`void`\>
+
+Logging to the Telegram chat.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `telegram` | [`Telegram`](classes/Telegram.md) | - |
+| `message` | `string` | The message to send to the telegram service. |
+
+#### Returns
+
+`Promise`<`void`\>
+
+#### Defined in
+
+[index.ts:108](https://github.com/DeFiChain-Wizard/custom-logging/blob/0daea93/src/index.ts#L108)
+
+___
+
+### logTitle
+
+▸ **logTitle**(): `void`
+
+Logging some coole title to the console! :)
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[index.ts:124](https://github.com/DeFiChain-Wizard/custom-logging/blob/0daea93/src/index.ts#L124)
+
+___
+
+### logWalletInfo
+
+▸ **logWalletInfo**(`walletInfo`, `tokenBalance`): `void`
+
+Prints out some detailed information about a given Wallet
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `walletInfo` | `WalletInfo` |
+| `tokenBalance` | `AddressToken`[] |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[wallet.ts:18](https://github.com/DeFiChain-Wizard/custom-logging/blob/0daea93/src/wallet.ts#L18)
 
 ___
 
@@ -120,4 +193,4 @@ Logs out an WARNING log.
 
 #### Defined in
 
-[index.ts:61](https://github.com/DeFiChain-Wizard/custom-logging/blob/02920d6/src/index.ts#L61)
+[index.ts:66](https://github.com/DeFiChain-Wizard/custom-logging/blob/0daea93/src/index.ts#L66)

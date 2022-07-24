@@ -28,10 +28,11 @@ class Telegram {
     if (
       !config ||
       isStringNullOrEmpty(config.chatid) ||
-      isStringNullOrEmpty(config.token)
+      isStringNullOrEmpty(config.token) ||
+      !config.token.includes(":")
     )
       throw new Error(
-        "Please check your Telegram settings. Mandatory fields are missing."
+        "Please check your Telegram settings. Mandatory fields are missing or are wrong."
       );
     this.token = config.token;
     this.chatId = config.chatid;

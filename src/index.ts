@@ -7,8 +7,11 @@
  * This logger solely relies on console.* calls to be independent.
  */
 
+//TODO Printout bot config
+//TODO print out vault
 import { table } from "console";
-import { Telegram } from "./messenger/telegram";
+import { Telegram, TelegramBotConfig } from "./messenger/telegram";
+import { logWalletInfo } from "./wallet";
 import {
   DEBUG,
   ERROR,
@@ -141,4 +144,7 @@ export {
   logTable,
   logTelegram,
   logTitle,
+  Telegram,
+  TelegramBotConfig,
+  logWalletInfo,
 };

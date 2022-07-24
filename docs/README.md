@@ -83,3 +83,13 @@ logWalletInfo(walletInfo, tokens);
 This will result in this output:
 
 ![wallet info](img/wallet.png?raw=true "Wallet Info output")
+
+## Send messages to Telegram
+
+> **_Important:_** Please consider also sending an error message via Telegram to users.
+
+But you can of course send a message any time, if you want to inform about certain things.
+
+```ts
+
+```
