@@ -25,6 +25,14 @@ class Telegram {
     "https://api.telegram.org/bot%token/sendMessage?chat_id=%chatId&text=%message";
 
   constructor(config: TelegramBotConfig) {
+    if (
+      !config ||
+      isStringNullOrEmpty(config.chatid) ||
+      isStringNullOrEmpty(config.token)
+    )
+      throw new Error(
+        "Please check your Telegram settings. Mandatory fields are missing."
+      );
     this.token = config.token;
     this.chatId = config.chatid;
     this.prefix = `[${config.botname} - ${config.botversion}]`;
