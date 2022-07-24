@@ -38,7 +38,7 @@ The Telegram connector.
 
 #### Defined in
 
-[messenger/telegram.ts:27](https://github.com/DeFiChain-Wizard/custom-logging/blob/a5d065b/src/messenger/telegram.ts#L27)
+[messenger/telegram.ts:27](https://github.com/DeFiChain-Wizard/custom-logging/blob/4d12944/src/messenger/telegram.ts#L27)
 
 ## Properties
 
@@ -48,7 +48,7 @@ The Telegram connector.
 
 #### Defined in
 
-[messenger/telegram.ts:20](https://github.com/DeFiChain-Wizard/custom-logging/blob/a5d065b/src/messenger/telegram.ts#L20)
+[messenger/telegram.ts:20](https://github.com/DeFiChain-Wizard/custom-logging/blob/4d12944/src/messenger/telegram.ts#L20)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[messenger/telegram.ts:24](https://github.com/DeFiChain-Wizard/custom-logging/blob/a5d065b/src/messenger/telegram.ts#L24)
+[messenger/telegram.ts:24](https://github.com/DeFiChain-Wizard/custom-logging/blob/4d12944/src/messenger/telegram.ts#L24)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[messenger/telegram.ts:22](https://github.com/DeFiChain-Wizard/custom-logging/blob/a5d065b/src/messenger/telegram.ts#L22)
+[messenger/telegram.ts:22](https://github.com/DeFiChain-Wizard/custom-logging/blob/4d12944/src/messenger/telegram.ts#L22)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[messenger/telegram.ts:23](https://github.com/DeFiChain-Wizard/custom-logging/blob/a5d065b/src/messenger/telegram.ts#L23)
+[messenger/telegram.ts:23](https://github.com/DeFiChain-Wizard/custom-logging/blob/4d12944/src/messenger/telegram.ts#L23)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[messenger/telegram.ts:19](https://github.com/DeFiChain-Wizard/custom-logging/blob/a5d065b/src/messenger/telegram.ts#L19)
+[messenger/telegram.ts:19](https://github.com/DeFiChain-Wizard/custom-logging/blob/4d12944/src/messenger/telegram.ts#L19)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[messenger/telegram.ts:21](https://github.com/DeFiChain-Wizard/custom-logging/blob/a5d065b/src/messenger/telegram.ts#L21)
+[messenger/telegram.ts:21](https://github.com/DeFiChain-Wizard/custom-logging/blob/4d12944/src/messenger/telegram.ts#L21)
 
 ## Methods
 
@@ -124,7 +124,7 @@ The result from the API call against Telegram.
 
 #### Defined in
 
-[messenger/telegram.ts:69](https://github.com/DeFiChain-Wizard/custom-logging/blob/a5d065b/src/messenger/telegram.ts#L69)
+[messenger/telegram.ts:69](https://github.com/DeFiChain-Wizard/custom-logging/blob/4d12944/src/messenger/telegram.ts#L69)
 
 ___
 
@@ -148,4 +148,4 @@ The result from the API call against Telegram.
 
 #### Defined in
 
-[messenger/telegram.ts:51](https://github.com/DeFiChain-Wizard/custom-logging/blob/a5d065b/src/messenger/telegram.ts#L51)
+[messenger/telegram.ts:51](https://github.com/DeFiChain-Wizard/custom-logging/blob/4d12944/src/messenger/telegram.ts#L51)

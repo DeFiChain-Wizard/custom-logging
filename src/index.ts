@@ -11,7 +11,7 @@
 //TODO print out vault
 import { table } from "console";
 import { Telegram, TelegramBotConfig } from "./messenger/telegram";
-import { logWalletInfo } from "./wallet";
+import { logWalletInfo, WalletInfo } from "./wallet";
 import {
   DEBUG,
   ERROR,
@@ -147,4 +147,5 @@ export {
   Telegram,
   TelegramBotConfig,
   logWalletInfo,
+  WalletInfo,
 };
