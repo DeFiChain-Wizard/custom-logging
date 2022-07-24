@@ -1,4 +1,5 @@
 /* eslint-disable no-console */
+/* eslint-disable no-useless-escape */
 /* eslint-disable @typescript-eslint/no-var-requires */
 /**
  * This is just a little helper class to have a logger in each of our components.
@@ -113,4 +114,31 @@ const logTelegram = async (telegram: Telegram, message: string) => {
   }
 };
 
-export { logInfo, logDebug, logError, logWarn, logTable, logTelegram };
+/**
+ * Logging some coole title to the console! :)
+ *
+ */
+const logTitle = () => {
+  logInfo(`
+  
+ /$$$$$$$            /$$$$$$$$ /$$  /$$$$$$  /$$                 /$$                 /$$      /$$ /$$                                     /$$
+| $$__  $$          | $$_____/|__/ /$$__  $$| $$                |__/                | $$  /$ | $$|__/                                    | $$
+| $$  \ $$  /$$$$$$ | $$       /$$| $$  \__/| $$$$$$$   /$$$$$$  /$$ /$$$$$$$       | $$ /$$$| $$ /$$ /$$$$$$$$  /$$$$$$   /$$$$$$   /$$$$$$$
+| $$  | $$ /$$__  $$| $$$$$   | $$| $$      | $$__  $$ |____  $$| $$| $$__  $$      | $$/$$ $$ $$| $$|____ /$$/ |____  $$ /$$__  $$ /$$__  $$
+| $$  | $$| $$$$$$$$| $$__/   | $$| $$      | $$  \ $$  /$$$$$$$| $$| $$  \ $$      | $$$$_  $$$$| $$   /$$$$/   /$$$$$$$| $$  \__/| $$  | $$
+| $$  | $$| $$_____/| $$      | $$| $$    $$| $$  | $$ /$$__  $$| $$| $$  | $$      | $$$/ \  $$$| $$  /$$__/   /$$__  $$| $$      | $$  | $$
+| $$$$$$$/|  $$$$$$$| $$      | $$|  $$$$$$/| $$  | $$|  $$$$$$$| $$| $$  | $$      | $$/   \  $$| $$ /$$$$$$$$|  $$$$$$$| $$      |  $$$$$$$
+|_______/  \_______/|__/      |__/ \______/ |__/  |__/ \_______/|__/|__/  |__/      |__/     \__/|__/|________/ \_______/|__/       \_______/
+
+`);
+};
+
+export {
+  logInfo,
+  logDebug,
+  logError,
+  logWarn,
+  logTable,
+  logTelegram,
+  logTitle,
+};
