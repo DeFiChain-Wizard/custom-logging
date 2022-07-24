@@ -19,6 +19,8 @@ This will result in this output:
 
 ![console info](img/console.png?raw=true "Console Logging output")
 
+> **_Important:_**  If you have `NODE_ENV` set to ``"production"``, then ``DEBUG`` will not log out anything. Only ``INFO``, ``WARNING`` and ``ERROR``.
+
 ## Printing tables
 
 You can also print out `Objects` and `Arrays`as table:
