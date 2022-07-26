@@ -2,6 +2,9 @@ import fetch from "cross-fetch";
 import { logDebug } from "..";
 import { isStringNullOrEmpty } from "../utils/helper";
 
+const TELEGRAM_ENDPOINT =
+  "https://api.telegram.org/bot%token/sendMessage?parse_mode=markdown&chat_id=%chatId&text=%message";
+
 /**
  *  The interface for the Telegram bot configuration
  */
@@ -16,13 +19,11 @@ interface TelegramBotConfig {
  * The Telegram connector.
  */
 class Telegram {
-  private readonly prefix: string = "[VaultMaxi]";
+  private readonly prefix: string = "[DeFiChain Wizard]";
   readonly chatId: string = "";
   readonly token: string = "";
   readonly logChatId: string = "";
   readonly logToken: string = "";
-  private readonly endpoint: string =
-    "https://api.telegram.org/bot%token/sendMessage?chat_id=%chatId&text=%message";
 
   constructor(config: TelegramBotConfig) {
     if (
@@ -36,7 +37,7 @@ class Telegram {
       );
     this.token = config.token;
     this.chatId = config.chatid;
-    this.prefix = `[${config.botname} - ${config.botversion}]`;
+    this.prefix = `✨ ${config.botname} - ${config.botversion} ✨`;
     logDebug(
       `Setting up Telegram connector: Token: ${config.token} - chatID: ${config.chatid} - Prefix: [${this.prefix}]`
     );
@@ -71,11 +72,11 @@ class Telegram {
     chatId: string,
     token: string
   ): Promise<unknown> {
-    const endpointUrl = this.endpoint
-      .replace("%token", token)
+    const endpointUrl = TELEGRAM_ENDPOINT.replace("%token", token)
       .replace("%chatId", chatId)
-      .replace("%message", encodeURI(`${this.prefix} ${message}`));
+      .replace("%message", encodeURI(`${this.prefix}\n\n${message}`));
 
+    logDebug(endpointUrl);
     const response = await fetch(endpointUrl);
     return await response.json();
   }
