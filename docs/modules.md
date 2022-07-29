@@ -15,6 +15,7 @@
 
 ### Functions
 
+- [logConfig](modules.md#logconfig)
 - [logDebug](modules.md#logdebug)
 - [logError](modules.md#logerror)
 - [logInfo](modules.md#loginfo)
@@ -25,6 +26,28 @@
 - [logWarn](modules.md#logwarn)
 
 ## Functions
+
+### logConfig
+
+▸ **logConfig**(`config`): `void`
+
+Prints out the current config
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `config` | `CustomMessage` | The config to print out |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[index.ts:109](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/index.ts#L109)
+
+___
 
 ### logDebug
 
@@ -44,7 +67,7 @@ Logs out an DEBUG log.
 
 #### Defined in
 
-[index.ts:47](https://github.com/DeFiChain-Wizard/custom-logging/blob/c14e5de/src/index.ts#L47)
+[index.ts:48](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/index.ts#L48)
 
 ___
 
@@ -66,7 +89,7 @@ Logs out an ERROR log.
 
 #### Defined in
 
-[index.ts:82](https://github.com/DeFiChain-Wizard/custom-logging/blob/c14e5de/src/index.ts#L82)
+[index.ts:83](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/index.ts#L83)
 
 ___
 
@@ -88,7 +111,7 @@ Logs out an INFO log.
 
 #### Defined in
 
-[index.ts:31](https://github.com/DeFiChain-Wizard/custom-logging/blob/c14e5de/src/index.ts#L31)
+[index.ts:32](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/index.ts#L32)
 
 ___
 
@@ -110,7 +133,7 @@ Prints out any array or object as table.
 
 #### Defined in
 
-[index.ts:98](https://github.com/DeFiChain-Wizard/custom-logging/blob/c14e5de/src/index.ts#L98)
+[index.ts:99](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/index.ts#L99)
 
 ___
 
@@ -133,7 +156,7 @@ Logging to the Telegram chat.
 
 #### Defined in
 
-[index.ts:108](https://github.com/DeFiChain-Wizard/custom-logging/blob/c14e5de/src/index.ts#L108)
+[index.ts:119](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/index.ts#L119)
 
 ___
 
@@ -149,7 +172,7 @@ Logging some coole title to the console! :)
 
 #### Defined in
 
-[index.ts:124](https://github.com/DeFiChain-Wizard/custom-logging/blob/c14e5de/src/index.ts#L124)
+[index.ts:135](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/index.ts#L135)
 
 ___
 
@@ -171,7 +194,7 @@ Prints out some detailed information about a given Wallet
 
 #### Defined in
 
-[wallet.ts:19](https://github.com/DeFiChain-Wizard/custom-logging/blob/c14e5de/src/wallet.ts#L19)
+[wallet.ts:19](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/wallet.ts#L19)
 
 ___
 
@@ -193,4 +216,4 @@ Logs out an WARNING log.
 
 #### Defined in
 
-[index.ts:66](https://github.com/DeFiChain-Wizard/custom-logging/blob/c14e5de/src/index.ts#L66)
+[index.ts:67](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/index.ts#L67)

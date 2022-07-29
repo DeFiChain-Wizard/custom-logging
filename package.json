@@ -26,6 +26,7 @@
     "homepage": "https://github.com/DeFiChain-Wizard/custom-logging#readme",
     "dependencies": {
         "@defichain/whale-api-client": "2.54.1",
+        "@defichainwizard/custom-transactions": "^0.5.7",
         "@typescript-eslint/parser": "^5.30.7",
         "chalk": "^4.1.2"
     },

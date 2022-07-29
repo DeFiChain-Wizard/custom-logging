@@ -22,6 +22,7 @@ import {
   prepareOutput,
   WARNING,
 } from "./utils/helper";
+import { CustomMessage } from "@defichainwizard/custom-transactions";
 
 /**
  * Logs out an INFO log.
@@ -102,6 +103,16 @@ const logTable = (...message: Array<object | number | string>) => {
 };
 
 /**
+ * Prints out the current config
+ * @param config The config to print out
+ */
+const logConfig = (config: CustomMessage) => {
+  const comp = config.compounding;
+  logTable({ config });
+  logTable({ comp });
+};
+
+/**
  * Logging to the Telegram chat.
  * @param message The message to send to the telegram service.
  */
@@ -148,4 +159,5 @@ export {
   TelegramBotConfig,
   logWalletInfo,
   WalletInfo,
+  logConfig,
 };
