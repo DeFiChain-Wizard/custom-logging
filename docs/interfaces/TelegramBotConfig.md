@@ -21,7 +21,7 @@ The interface for the Telegram bot configuration
 
 #### Defined in
 
-[messenger/telegram.ts:12](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/messenger/telegram.ts#L12)
+[messenger/telegram.ts:12](https://github.com/DeFiChain-Wizard/custom-logging/blob/ec9fb90/src/messenger/telegram.ts#L12)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[messenger/telegram.ts:13](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/messenger/telegram.ts#L13)
+[messenger/telegram.ts:13](https://github.com/DeFiChain-Wizard/custom-logging/blob/ec9fb90/src/messenger/telegram.ts#L13)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[messenger/telegram.ts:14](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/messenger/telegram.ts#L14)
+[messenger/telegram.ts:14](https://github.com/DeFiChain-Wizard/custom-logging/blob/ec9fb90/src/messenger/telegram.ts#L14)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[messenger/telegram.ts:15](https://github.com/DeFiChain-Wizard/custom-logging/blob/3d9dcf6/src/messenger/telegram.ts#L15)
+[messenger/telegram.ts:15](https://github.com/DeFiChain-Wizard/custom-logging/blob/ec9fb90/src/messenger/telegram.ts#L15)

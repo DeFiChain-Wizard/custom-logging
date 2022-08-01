@@ -7,9 +7,6 @@
  * This logger solely relies on console.* calls to be independent.
  */
 
-//TODO Printout bot config
-//TODO print out vault
-import { table } from "console";
 import { Telegram, TelegramBotConfig } from "./messenger/telegram";
 import { logWalletInfo, WalletInfo } from "./wallet";
 import {
@@ -99,7 +96,7 @@ const logError = (...message: Array<object | number | string>) => {
 const logTable = (...message: Array<object | number | string>) => {
   const messageToLog = prepareOutput(message);
   log(getDate(), INFO);
-  table(messageToLog);
+  console.table(messageToLog);
 };
 
 /**
