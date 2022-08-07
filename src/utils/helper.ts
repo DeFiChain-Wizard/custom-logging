@@ -42,9 +42,9 @@ const getDate = () => {
   const date = new Date();
   return `${date.getFullYear()}/${prepareDate(
     date.getMonth() + 1
-  )}/${prepareDate(date.getDate())} - ${date.getHours()}:${prepareDate(
-    date.getMinutes()
-  )}:${prepareDate(date.getSeconds())}`;
+  )}/${prepareDate(date.getDate())} - ${prepareDate(
+    date.getHours()
+  )}:${prepareDate(date.getMinutes())}:${prepareDate(date.getSeconds())}`;
 };
 
 /**
