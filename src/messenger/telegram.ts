@@ -38,9 +38,6 @@ class Telegram {
     this.token = config.token;
     this.chatId = config.chatid;
     this.prefix = `✨ ${config.botname} - ${config.botversion} ✨`;
-    logDebug(
-      `Setting up Telegram connector: Token: ${config.token} - chatID: ${config.chatid} - Prefix: [${this.prefix}]`
-    );
   }
 
   /**
@@ -50,7 +47,6 @@ class Telegram {
    * @returns The result from the API call against Telegram.
    */
   async send(message: string): Promise<unknown> {
-    logDebug(`Sending message to Telegram: "${message}".`);
     if (isStringNullOrEmpty(this.chatId) || isStringNullOrEmpty(this.token)) {
       throw new Error(
         "Either chatId or token are not configured. Cannot send anything via Telegram!"
@@ -75,8 +71,6 @@ class Telegram {
     const endpointUrl = TELEGRAM_ENDPOINT.replace("%token", token)
       .replace("%chatId", chatId)
       .replace("%message", encodeURI(`${this.prefix}\n\n${message}`));
-
-    logDebug(endpointUrl);
     const response = await fetch(endpointUrl);
     return await response.json();
   }
