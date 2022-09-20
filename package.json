@@ -1,6 +1,6 @@
 {
     "name": "@defichainwizard/custom-logging",
-    "version": "0.3.9",
+    "version": "0.3.10",
     "description": "The npm custom logging library for the DeFIChain Wizard",
     "main": "./dist/index.js",
     "types": "./dist/index.d.ts",
