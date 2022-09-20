@@ -1,4 +1,5 @@
 import fetch from "cross-fetch";
+import { logDebug } from "..";
 import { isStringNullOrEmpty } from "../utils/helper";
 
 const TELEGRAM_ENDPOINT =
@@ -51,6 +52,8 @@ class Telegram {
         "Either chatId or token are not configured. Cannot send anything via Telegram!"
       );
     }
+
+    logDebug(`Sending message to Telegram: "${message}".`);
     return this.internalSend(message, this.chatId, this.token);
   }
 
