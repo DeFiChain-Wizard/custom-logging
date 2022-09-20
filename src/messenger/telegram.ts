@@ -1,5 +1,4 @@
 import fetch from "cross-fetch";
-import { logDebug } from "..";
 import { isStringNullOrEmpty } from "../utils/helper";
 
 const TELEGRAM_ENDPOINT =

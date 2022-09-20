@@ -21,7 +21,7 @@ Describes the Wallet Info that should be passed
 
 #### Defined in
 
-[wallet.ts:8](https://github.com/DeFiChain-Wizard/custom-logging/blob/f5a6004/src/wallet.ts#L8)
+[wallet.ts:8](https://github.com/DeFiChain-Wizard/custom-logging/blob/6e85908/src/wallet.ts#L8)
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 #### Defined in
 
-[wallet.ts:10](https://github.com/DeFiChain-Wizard/custom-logging/blob/f5a6004/src/wallet.ts#L10)
+[wallet.ts:10](https://github.com/DeFiChain-Wizard/custom-logging/blob/6e85908/src/wallet.ts#L10)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[wallet.ts:11](https://github.com/DeFiChain-Wizard/custom-logging/blob/f5a6004/src/wallet.ts#L11)
+[wallet.ts:11](https://github.com/DeFiChain-Wizard/custom-logging/blob/6e85908/src/wallet.ts#L11)
 
 ___
 
@@ -51,4 +51,4 @@ ___
 
 #### Defined in
 
-[wallet.ts:9](https://github.com/DeFiChain-Wizard/custom-logging/blob/f5a6004/src/wallet.ts#L9)
+[wallet.ts:9](https://github.com/DeFiChain-Wizard/custom-logging/blob/6e85908/src/wallet.ts#L9)
